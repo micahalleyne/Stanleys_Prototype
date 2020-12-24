@@ -1,0 +1,17 @@
+
+<div id="post_content">
+  <h1 class="title">
+    <%= @blog.title %>
+  </h1>
+
+  <p class="date">
+    Submitted <%= time_ago_in_words(@blog.created_at) %> ago
+    <% if user_signed_in? %>
+      <%= link_to 'Edit', edit_blog_path(@blog) %> |
+      <%= link_to 'Delete', blog_path(@blog), method: :delete, data: { confirm: 'Are you sure ?'} %>
+    <% end %>
+  </p>
+
+  <p class="body">
+    <%= @blog.content %>
+  </p>

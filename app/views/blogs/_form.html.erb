@@ -10,18 +10,39 @@
     </div>
 
   <% end %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
 
-  <p>
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
-  </p>
+  <div class="title/">
+    <%= f.text_field :title, placeholder: "Title", class: 'title_input' %>
+  </div>
+  
+  <div class="category/">
+    <select name="category" id="category_input">
+      <option value="" disabled selected>Category</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+      <option value="">Topic</option>
+    </select>
+  </div>
 
-  <p>
-    <%= f.submit %>
-  </p>
+  <div class="description/">
+    <%= f.text_area :content, placeholder: "Description", class: 'description_input'%>
+  </div>
 
+  <div class="term">
+  <%= f.check_box :content, class: 'term_check_box' %>
+  <p class="term_text">I have read and agree to the terms by checking off this box.</p>
+  <p class="term_link">Terms</p>
+  </div>
+
+  <div>
+    <%= f.submit class: "csubmit" %>
+  </div>
 <% end %>
+
+

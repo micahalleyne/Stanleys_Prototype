@@ -1,11 +1,13 @@
 class VideosController < ApplicationController
-    before_action :authenticate_user!
+    before_action :authenticate_user!, except: [:index, :show]
+    before_action :find_video, only: [:show, :edit, :update, :destroy,]
 
     def index
         @videos = Video.all.order("created_at DESC")
     end
 
     def show
+        @video.punch(request)
     end
 
     def new

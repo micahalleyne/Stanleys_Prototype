@@ -1,0 +1,312 @@
+    /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+    
+    .header {
+        .text {
+            h1 {
+                position: absolute;
+                width: 230px;
+                height: 35px;
+                left: 44%;
+                top: 67px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 30px;
+                line-height: 35px;
+                color: #000000;
+            }
+            h2 {
+                position: absolute;
+                width: 207px;
+                height: 21px;
+                left: 710px;
+                top: 110px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 19px;
+                line-height: 21px;
+                /* identical to box height */
+                color: #858585;
+            }
+        }
+        .topics {
+            .topic {
+                display: inline-block;
+                margin-top: 183px;
+                margin-left: 165px;
+                img {
+                    // position: absolute;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 5px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    // left: 165px;
+                    // top: 183px;
+                }
+                p {
+                    position: absolute;
+                    width: 42px;
+                    height: 15.4px;
+                    // left: 165px;
+                    // top: 230px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #636363;
+                }
+            }
+            .topic1 {
+                display: inline-block;
+                margin-top: 183px;
+                margin-left: 103px;
+                img {
+                    // position: absolute;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 5px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    // left: 165px;
+                    // top: 183px;
+                }
+                p {
+                    position: absolute;
+                    width: 42px;
+                    height: 15.4px;
+                    // left: 165px;
+                    // top: 230px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #636363;
+                }
+            }
+        }
+    }
+    
+    .blogs_wrapper {
+        .title_input {
+            position: absolute;
+            width: 565px;
+            height: 73px;
+            left: 550px;
+            top: 456px;
+            border: 1px solid #BABABA;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            padding: 25px;
+             ::placeholder {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 21px;
+                color: #939393;
+            }
+        }
+        #category_input {
+            position: absolute;
+            width: 565px;
+            height: 64px;
+            left: 550px;
+            top: 561px;
+            border: 1px solid #BABABA;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            padding: 21px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 21px;
+            color: #939393;
+             ::placeholder {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 21px;
+                color: #939393;
+            }
+        }
+        .description_input {
+            position: absolute;
+            width: 565px;
+            height: 243px;
+            left: 550px;
+            top: 653px;
+            border: 1px solid #BABABA;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: Roboto;
+            letter-spacing: 0.05em;
+            padding: 26.5px;
+             ::placeholder {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 21px;
+                color: #939393;
+            }
+        }
+        .term {
+            // position: absolute;
+            // font-size: 17px;
+            // top: 925px;
+            // margin-left: 315;
+            .term_check_box {
+                text-align: center;
+                top: 930px;
+                left: 35%;
+                width: 22px;
+                height: 23px;
+                font-size: 17px;
+                position: absolute;
+            }
+            .term_text {
+                top: 920px;
+                left: 39.6%;
+                color: #000;
+                font-size: 17px;
+                position: absolute;
+            }
+            .term_link {
+                top: 920px;
+                left: 67.4%;
+                color: #597DAE;
+                font-size: 17px;
+                position: absolute;
+            }
+        }
+        .csubmit {
+            position: absolute;
+            width: 196px;
+            height: 60px;
+            left: 725px;
+            top: 1000px;
+            background: #597DAE;
+            border-radius: 5px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 20px;
+            color: #F3F3F3;
+        }
+    }
+    
+    // .blog_wrapper {
+    //     padding: 1em 12em;
+    //     .title {
+    //         margin: 2px;
+    //         a {
+    //             font-weight: 700;
+    //             text-decoration: none;
+    //             color: #000000;
+    //             font-size: 17px;
+    //             &:hover {
+    //                 color: #22487b;
+    //             }
+    //         }
+    //     }
+    //     .date_and_author {
+    //         color: #22487b;
+    //         margin: .5em 0 0 0;
+    //     }
+    //     .body {
+    //         color: #5C5C5C;
+    //         font-weight: 400;
+    //         margin: .5em 0 0 0;
+    //     }
+    // }
+    // #blog_content {
+    //     padding: 5em 7em;
+    //     .title {
+    //         font-weight: 500;
+    //         text-decoration: none;
+    //         color: #000000;
+    //         font-size: 2.5em;
+    //         margin-bottom: 0;
+    //     }
+    //     .content {
+    //         font-size: 1.1em;
+    //         line-height: 1.75;
+    //         color: #5C5C5C;
+    //     }
+    //     .date {
+    //         color: #9eafba;
+    //         margin: .5em 0 2em 0;
+    //     }
+    //     a {
+    //         margin: 2em 0;
+    //         color: #000000;
+    //         text-decoration: none;
+    //     }
+    //     textarea {
+    //         margin-left: 125px;
+    //         width: 1100px;
+    //         height: 83px;
+    //         left: 215px;
+    //         top: 1011px;
+    //         border: 1px solid #6F6F6F;
+    //         box-sizing: border-box;
+    //         border-radius: 5px;
+    //     }
+    //     h2 {
+    //         font-weight: 400;
+    //         font-size: 18px;
+    //         margin-bottom: 25px;
+    //     }
+    // }
+    // // textarea {
+    // //     min-height: 180px;
+    // //     min-width: 360px;
+    // // }
+    // input[type="submit"] {
+    //     outline: none;
+    //     background: transparent;
+    //     border: 1px solid #d6dce0;
+    //     padding: .5em 1.5em;
+    //     font-size: 1.1em;
+    //     border-radius: .5em;
+    //     margin-left: .5em;
+    //     background-color: #597DAE;
+    //     color: #F3F3F3;
+    //     // &:hover {
+    //     //     border: 1px solid #33acb7;
+    //     //     color: #33acb7;
+    //     // }
+    // }
+    // #blogs_wrapper {
+    //     // textfield {}
+    //     // textarea {
+    //     //     position: absolute;
+    //     //     width: 565px;
+    //     //     height: 243px;
+    //     //     left: 315px;
+    //     //     top: 653px;
+    //     //     border: 1px solid #BABABA;
+    //     //     box-sizing: border-box;
+    //     //     border-radius: 5px;
+    //     // }
+    // }

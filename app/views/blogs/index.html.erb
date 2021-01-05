@@ -1,5 +1,5 @@
 <% @blogs.each do |blog| %>
-  <div class="post_wrapper">
+  <div class="blog_wrapper">
     <h2 class="title"><%= link_to blog.title, blog %></h2>
     <p class="body"><%= truncate(blog.content, length:100) %></p>
     <p class="date"><%= time_ago_in_words(blog.created_at) %> ago</p>

@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
     end
 
     def show
+        @blog.punch(request)
     end
 
     def new

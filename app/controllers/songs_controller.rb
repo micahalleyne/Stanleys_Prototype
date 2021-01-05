@@ -1,11 +1,14 @@
 class SongsController < ApplicationController
-    before_action :authenticate_user!
+    before_action :authenticate_user!, except: [:index, :show]
+    before_action :find_song, only: [:show, :edit, :update, :destroy,]
+
 
     def index
         @songs = Song.all.order("created_at DESC")
     end
 
     def show
+        @song.punch(request)
     end
 
     def new
@@ -45,7 +48,8 @@ class SongsController < ApplicationController
         params.require(:song).permit(:title, :attachment)
     end
 
-    def find_song
+    def find_blog
         @song = Song.find(params[:id])
     end
+    
 end

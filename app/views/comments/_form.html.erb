@@ -1,9 +1,9 @@
-<%= form_for([@blog, @blog.comments.build]) do |f| %>
-  <p>
-    <%= f.text_area :body %>
-  </p>
-  <br>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<div class="comment_inline">
+  <%= form_for([@blog, @blog.comments.build]) do |f| %>
+    
+    <p>
+      <%= f.text_area :body, class: 'comment_input ' %>
+    </p>
+    <br>
+  <% end %>
+</div> 

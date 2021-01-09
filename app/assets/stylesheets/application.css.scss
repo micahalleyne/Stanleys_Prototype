@@ -1,4 +1,4 @@
-    /*
+        /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -13,300 +13,494 @@
  *= require_tree .
  *= require_self
  */
-    
-    .header {
-        .text {
-            h1 {
-                position: absolute;
-                width: 230px;
-                height: 35px;
-                left: 44%;
-                top: 67px;
+        
+        .main_header {
+            .text {
+                h1 {
+                    position: absolute;
+                    width: 230px;
+                    height: 35px;
+                    left: 44%;
+                    top: 67px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 30px;
+                    line-height: 35px;
+                    color: #000000;
+                }
+                h2 {
+                    position: absolute;
+                    width: 207px;
+                    height: 21px;
+                    left: 710px;
+                    top: 110px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 19px;
+                    line-height: 21px;
+                    /* identical to box height */
+                    color: #858585;
+                }
+            }
+            .topics {
+                .topic {
+                    display: inline-block;
+                    margin-top: 183px;
+                    margin-left: 165px;
+                    img {
+                        // position: absolute;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 5px;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        // left: 165px;
+                        // top: 183px;
+                    }
+                    p {
+                        position: absolute;
+                        width: 42px;
+                        height: 15.4px;
+                        // left: 165px;
+                        // top: 230px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #636363;
+                    }
+                }
+                .topic1 {
+                    display: inline-block;
+                    margin-top: 183px;
+                    margin-left: 103px;
+                    img {
+                        // position: absolute;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 5px;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        // left: 165px;
+                        // top: 183px;
+                    }
+                    p {
+                        position: absolute;
+                        width: 42px;
+                        height: 15.4px;
+                        // left: 165px;
+                        // top: 230px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #636363;
+                    }
+                }
+            }
+        }
+        
+        .blog_content {
+            padding: 120px;
+            .blog_title {
+                width: 177px;
+                height: 29px;
+                // left: 110px;
+                // margin-top: 355px;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 30px;
-                line-height: 35px;
+                font-size: 25px;
+                line-height: 29px;
                 color: #000000;
             }
-            h2 {
-                position: absolute;
-                width: 207px;
-                height: 21px;
-                left: 710px;
-                top: 110px;
+            .blog_description {
+                width: 1036px;
+                height: 210px;
+                // left: 112px;
+                // top: 425px;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 19px;
-                line-height: 21px;
-                /* identical to box height */
-                color: #858585;
+                font-size: 18px;
+                line-height: 45px;
+                color: #5C5C5C;
+            }
+            .comments {
+                .response_count {
+                    width: 116px;
+                    height: 21px;
+                    margin-top: 130px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 21px;
+                    /* identical to box height */
+                    color: #000000;
+                }
+                .comment_input {
+                    width: 900px;
+                    height: 83px;
+                    margin-left: 90px;
+                    border: 1px solid #6F6F6F;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                }
+                .comment_inline {
+                    display: inline-block;
+                }
+                .comment_image {
+                    height: 60px;
+                    width: 60px;
+                    margin-bottom: 43px;
+                    margin-left: 10px;
+                    border-radius: 5px;
+                }
+                .comment_line {
+                    width: 1350px;
+                    height: 0px;
+                    // left: 82px;
+                    margin-top: 115px;
+                    border: 1px solid #E9E9E9;
+                    transform: rotate(-0.11deg);
+                }
+                // .comments_section {
+                //     width: 900px;
+                //     height: 83px;
+                //     margin-top: 55px;
+                //     border: 1px solid #6F6F6F;
+                //     box-sizing: border-box;
+                //     border-radius: 5px;
+                // }
             }
         }
-        .topics {
-            .topic {
-                display: inline-block;
-                margin-top: 183px;
-                margin-left: 165px;
-                img {
-                    // position: absolute;
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 5px;
-                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                    // left: 165px;
-                    // top: 183px;
-                }
-                p {
+        
+        .blogs_wrapper {
+            .blog_body {
+                .title_input {
                     position: absolute;
-                    width: 42px;
-                    height: 15.4px;
-                    // left: 165px;
-                    // top: 230px;
+                    width: 565px;
+                    height: 73px;
+                    left: 550px;
+                    top: 456px;
+                    border: 1px solid #BABABA;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    letter-spacing: 0.05em;
+                    padding: 25px;
+                     ::placeholder {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 21px;
+                        color: #939393;
+                    }
+                }
+                #category_input {
+                    position: absolute;
+                    width: 565px;
+                    height: 64px;
+                    left: 550px;
+                    top: 561px;
+                    border: 1px solid #BABABA;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    letter-spacing: 0.05em;
+                    padding: 21px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 21px;
+                    color: #939393;
+                     ::placeholder {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 21px;
+                        color: #939393;
+                    }
+                }
+                .description_input {
+                    position: absolute;
+                    width: 565px;
+                    height: 243px;
+                    left: 550px;
+                    top: 653px;
+                    border: 1px solid #BABABA;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    font-family: Roboto;
+                    letter-spacing: 0.05em;
+                    padding: 26.5px;
+                     ::placeholder {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 21px;
+                        color: #939393;
+                    }
+                }
+                .term {
+                    .term_check_box {
+                        text-align: center;
+                        top: 930px;
+                        left: 35%;
+                        width: 22px;
+                        height: 23px;
+                        font-size: 17px;
+                        position: absolute;
+                    }
+                    .term_text {
+                        top: 920px;
+                        left: 39.6%;
+                        color: #000;
+                        font-size: 17px;
+                        position: absolute;
+                    }
+                    .term_link {
+                        top: 920px;
+                        left: 67.4%;
+                        color: #597DAE;
+                        font-size: 17px;
+                        position: absolute;
+                    }
+                }
+                .csubmit {
+                    position: absolute;
+                    width: 196px;
+                    height: 60px;
+                    left: 725px;
+                    top: 1000px;
+                    background: #597DAE;
+                    border-radius: 5px;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 17px;
                     line-height: 20px;
-                    color: #636363;
+                    color: #F3F3F3;
                 }
             }
-            .topic1 {
-                display: inline-block;
-                margin-top: 183px;
-                margin-left: 103px;
-                img {
-                    // position: absolute;
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 5px;
-                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                    // left: 165px;
-                    // top: 183px;
+        }
+        
+        .registration {
+            .left_registry {
+                position: absolute;
+                width: 440px;
+                height: 490px;
+                left: -200px;
+                top: 200px;
+                border-radius: 300px;
+            }
+            .right_registry {
+                position: absolute;
+                width: 440px;
+                height: 490px;
+                left: 1370px;
+                top: 200px;
+                border-radius: 300px;
+            }
+            .registration_header {
+                .text {
+                    h1 {
+                        position: absolute;
+                        width: 230px;
+                        height: 35px;
+                        left: 44%;
+                        top: 242px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 30px;
+                        line-height: 35px;
+                        color: #000000;
+                    }
+                    h2 {
+                        position: absolute;
+                        width: 207px;
+                        height: 21px;
+                        left: 710px;
+                        top: 285px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 19px;
+                        line-height: 21px;
+                        /* identical to box height */
+                        color: #858585;
+                    }
                 }
-                p {
+            }
+            .registration_body {
+                .email_field {
                     position: absolute;
-                    width: 42px;
-                    height: 15.4px;
-                    // left: 165px;
-                    // top: 230px;
+                    width: 221px;
+                    height: 40px;
+                    left: 705px;
+                    top: 375px;
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 7px;
+                    padding-left: 19px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000000;
+                }
+                .password_field {
+                    position: absolute;
+                    width: 221px;
+                    height: 40px;
+                    left: 705px;
+                    top: 440px;
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 7px;
+                    padding-left: 19px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000000;
+                }
+                .confirm_password_field {
+                    position: absolute;
+                    width: 221px;
+                    height: 40px;
+                    left: 705px;
+                    top: 505px;
+                    border: 1px solid #DEDEDE;
+                    box-sizing: border-box;
+                    border-radius: 7px;
+                    padding-left: 19px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000000;
+                }
+                .login_line {
+                    position: absolute;
+                    width: 184px;
+                    height: 0px;
+                    left: 720px;
+                    top: 500px;
+                    border: 1px solid #E9E9E9;
+                }
+                .sign_up_line {
+                    position: absolute;
+                    width: 184px;
+                    height: 0px;
+                    left: 720px;
+                    top: 565px;
+                    border: 1px solid #E9E9E9;
+                }
+                .lsubmit {
+                    position: absolute;
+                    width: 221px;
+                    height: 41px;
+                    left: 705px;
+                    top: 540px;
+                    background: #597DAE;
+                    border: 1px solid #BDBDBD;
+                    box-sizing: border-box;
+                    border-radius: 7px;
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 17px;
                     line-height: 20px;
-                    color: #636363;
+                    color: #FFFFFF;
+                }
+                .ssubmit {
+                    position: absolute;
+                    width: 221px;
+                    height: 41px;
+                    left: 705px;
+                    top: 605px;
+                    background: #597DAE;
+                    border: 1px solid #BDBDBD;
+                    box-sizing: border-box;
+                    border-radius: 7px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                }
+                .login_link {
+                    position: absolute;
+                    text-decoration: none;
+                    width: 210px;
+                    height: 15px;
+                    left: 716px;
+                    top: 610px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 15px;
+                    color: #000000;
+                }
+                .signup_link {
+                    position: absolute;
+                    text-decoration: none;
+                    width: 210px;
+                    height: 15px;
+                    left: 716px;
+                    top: 675px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 15px;
+                    color: #000000;
                 }
             }
         }
-    }
-    
-    .blogs_wrapper {
-        .title_input {
-            position: absolute;
-            width: 565px;
-            height: 73px;
-            left: 550px;
-            top: 456px;
-            border: 1px solid #BABABA;
-            box-sizing: border-box;
-            border-radius: 5px;
-            font-size: 18px;
-            letter-spacing: 0.05em;
-            padding: 25px;
-             ::placeholder {
+        
+        .terms_body {
+            .terms_title {
+                position: absolute;
+                width: 150px;
+                height: 15px;
+                left: 109px;
+                top: 190px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 15px;
+                color: #000000;
+            }
+            .terms_description {
+                position: absolute;
+                width: 1350px;
+                height: 690px;
+                left: 109px;
+                top: 227px;
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
-                line-height: 21px;
-                color: #939393;
-            }
-        }
-        #category_input {
-            position: absolute;
-            width: 565px;
-            height: 64px;
-            left: 550px;
-            top: 561px;
-            border: 1px solid #BABABA;
-            box-sizing: border-box;
-            border-radius: 5px;
-            font-size: 18px;
-            letter-spacing: 0.05em;
-            padding: 21px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 21px;
-            color: #939393;
-             ::placeholder {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                line-height: 21px;
-                color: #939393;
-            }
-        }
-        .description_input {
-            position: absolute;
-            width: 565px;
-            height: 243px;
-            left: 550px;
-            top: 653px;
-            border: 1px solid #BABABA;
-            box-sizing: border-box;
-            border-radius: 5px;
-            font-size: 18px;
-            font-family: Roboto;
-            letter-spacing: 0.05em;
-            padding: 26.5px;
-             ::placeholder {
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                line-height: 21px;
-                color: #939393;
-            }
-        }
-        .term {
-            // position: absolute;
-            // font-size: 17px;
-            // top: 925px;
-            // margin-left: 315;
-            .term_check_box {
-                text-align: center;
-                top: 930px;
-                left: 35%;
-                width: 22px;
-                height: 23px;
                 font-size: 17px;
-                position: absolute;
-            }
-            .term_text {
-                top: 920px;
-                left: 39.6%;
-                color: #000;
-                font-size: 17px;
-                position: absolute;
-            }
-            .term_link {
-                top: 920px;
-                left: 67.4%;
-                color: #597DAE;
-                font-size: 17px;
-                position: absolute;
+                line-height: 15px;
+                color: #000000;
             }
         }
-        .csubmit {
-            position: absolute;
-            width: 196px;
-            height: 60px;
-            left: 725px;
-            top: 1000px;
-            background: #597DAE;
-            border-radius: 5px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 17px;
-            line-height: 20px;
-            color: #F3F3F3;
-        }
-    }
-    
-    // .blog_wrapper {
-    //     padding: 1em 12em;
-    //     .title {
-    //         margin: 2px;
-    //         a {
-    //             font-weight: 700;
-    //             text-decoration: none;
-    //             color: #000000;
-    //             font-size: 17px;
-    //             &:hover {
-    //                 color: #22487b;
-    //             }
-    //         }
-    //     }
-    //     .date_and_author {
-    //         color: #22487b;
-    //         margin: .5em 0 0 0;
-    //     }
-    //     .body {
-    //         color: #5C5C5C;
-    //         font-weight: 400;
-    //         margin: .5em 0 0 0;
-    //     }
-    // }
-    // #blog_content {
-    //     padding: 5em 7em;
-    //     .title {
-    //         font-weight: 500;
-    //         text-decoration: none;
-    //         color: #000000;
-    //         font-size: 2.5em;
-    //         margin-bottom: 0;
-    //     }
-    //     .content {
-    //         font-size: 1.1em;
-    //         line-height: 1.75;
-    //         color: #5C5C5C;
-    //     }
-    //     .date {
-    //         color: #9eafba;
-    //         margin: .5em 0 2em 0;
-    //     }
-    //     a {
-    //         margin: 2em 0;
-    //         color: #000000;
-    //         text-decoration: none;
-    //     }
-    //     textarea {
-    //         margin-left: 125px;
-    //         width: 1100px;
-    //         height: 83px;
-    //         left: 215px;
-    //         top: 1011px;
-    //         border: 1px solid #6F6F6F;
-    //         box-sizing: border-box;
-    //         border-radius: 5px;
-    //     }
-    //     h2 {
-    //         font-weight: 400;
-    //         font-size: 18px;
-    //         margin-bottom: 25px;
-    //     }
-    // }
-    // // textarea {
-    // //     min-height: 180px;
-    // //     min-width: 360px;
-    // // }
-    // input[type="submit"] {
-    //     outline: none;
-    //     background: transparent;
-    //     border: 1px solid #d6dce0;
-    //     padding: .5em 1.5em;
-    //     font-size: 1.1em;
-    //     border-radius: .5em;
-    //     margin-left: .5em;
-    //     background-color: #597DAE;
-    //     color: #F3F3F3;
-    //     // &:hover {
-    //     //     border: 1px solid #33acb7;
-    //     //     color: #33acb7;
-    //     // }
-    // }
-    // #blogs_wrapper {
-    //     // textfield {}
-    //     // textarea {
-    //     //     position: absolute;
-    //     //     width: 565px;
-    //     //     height: 243px;
-    //     //     left: 315px;
-    //     //     top: 653px;
-    //     //     border: 1px solid #BABABA;
-    //     //     box-sizing: border-box;
-    //     //     border-radius: 5px;
-    //     // }
-    // }

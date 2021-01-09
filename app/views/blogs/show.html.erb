@@ -1,23 +1,66 @@
-<div id="blog_content">
-  <h1 class="title">
-    <%= @blog.title %>
+<div class="main_header">
+  <div class="text">
+      <h1>Singing Scientific</h1>
+      <h2>Science Through The Arts</h2>
+  </div>
+  <div class="topics">
+      <div class="topic">
+        <%= image_tag("topic.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic1.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic2.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic3.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic4.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic5.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic6.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic1.jpg") %>
+        <p>Topic</p>
+      </div>
+      <div class="topic1">
+        <%= image_tag("topic7.jpg") %>
+        <p>Topic</p>
+      </div>
+  </div> 
+</div>
+
+<div class="blog_content">
+  <h1 class="blog_title">
+    <%= @blog.title%>
   </h1>
 
-  <p class="date">
-    Submitted <%= time_ago_in_words(@blog.created_at) %> ago
-    <% if user_signed_in? %>
-      <%= link_to 'Edit', edit_blog_path(@blog) %> |
-      <%= link_to 'Delete', blog_path(@blog), method: :delete, data: { confirm: 'Are you sure ?'} %>
-    <% end %>
-  </p>
+    <div class="blog_description">
+      <%= @blog.content %>
+    </div>
 
-  <p class="content">
-    <%= @blog.content %>
-  </p>
-
-  <div id="comments">
-    <h2>Responses (<%= @blog.comments.count %>)</h2>
+  <div class="comments">
+    <h2 class="response_count">Responses (<%= @blog.comments.count %>)</h2>
+    <%= image_tag 'registry1.jpg', class: 'comment_image comment_inline' %>
     <%= render "comments/form" %>
-    <%= render @blog.comments %>
+
+    <hr class="comment_line">
+
+    <div class="comments_section">
+      <%= render @blog.comments %>
+    </div>
   </div>
 </div>

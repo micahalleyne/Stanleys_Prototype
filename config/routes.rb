@@ -7,4 +7,5 @@ Rails.application.routes.draw do
     resources :comments
   end
   root "blogs#index"
+  get 'terms', :to => 'terms#terms_services'
 end

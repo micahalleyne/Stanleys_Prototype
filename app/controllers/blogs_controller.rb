@@ -13,12 +13,13 @@ class BlogsController < ApplicationController
 
     def new
         @blog = current_user.blogs.build
+        @topics = Topic.all
     end
 
     def create
         @blog = current_user.blogs.build(blog_params)
-
-        if @blog.save
+        
+        if @blog.save!
             redirect_to @blog, notice: "Yesss! It was posted!"
         else
             render 'new'
@@ -45,7 +46,7 @@ class BlogsController < ApplicationController
     private
 
     def blog_params
-        params.require(:blog).permit(:title, :content)
+        params.require(:blog).permit(:title, :content, :topic_id)
     end
 
     def find_blog

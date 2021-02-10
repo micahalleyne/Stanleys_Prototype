@@ -43,8 +43,26 @@
   </div> 
 </div>
 
-  <div class="blogs_wrapper"> 
-    <div class="blog_body">
-      <%= render 'form' %>
-    </div> 
+<div class="forum_content">
+  <%# <%= image_tag 'registry1.jpg', class: 'forum_pic' %> 
+  
+  <h1 class="forum_question">
+    <%= @forum.question %>
+  </h1>
+
+    <div class="forum_description">
+      <%= @forum.description %>
+    </div>
+
+  <%# <div class="comments"> %>
+    <%# <h2 class="response_count">Responses (<%= @forum.comments.count %></h2> 
+    <%# <%= image_tag 'registry1.jpg', class: 'comment_image comment_inline' %> 
+    <%# <%= render "comments/form" %> 
+
+    <%# <hr class="comment_line"> %>
+
+    <%# <div class="comments_section"> %>
+      <%# <%= render @forum.comments %> 
+    <%# </div> %>
   </div>
+</div>

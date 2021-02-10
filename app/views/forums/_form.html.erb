@@ -1,0 +1,36 @@
+<%= form_for @forum do |f| %>
+  <% if @forum.errors.any? %>
+    <div id="errors">
+      <h2><%= pluralize(@forum.errors.count, "error") %> stopped this forum from saving</h2>
+      <ul>
+        <%= @forum.errors.full_messages.each do |msg| %>
+          <li> <%= msg %> </li>
+        <% end %>
+      </ul>
+    </div>
+
+  <% end %>
+
+  <div class="title">
+    <%= f.text_field :question, placeholder: "Question", class: 'title_input' %>
+  </div>
+  
+  <div>
+    <%= f.select :topic_id, options_from_collection_for_select(Topic.all, :id, :name), id: 'category_input' %>
+  </div>
+
+  <div class="description">
+    <%= f.text_area :description, placeholder: "Description", class: 'description_input'%>
+  </div>
+
+  <div class="term">
+      <p class="term_text">I have read and agree to the terms by checking off this box.</p>
+      <%= link_to 'Terms', terms_path, class: 'term_link' %>
+    </div>
+
+  <div>
+    <%= f.submit class: "csubmit" %>
+  </div>
+<% end %>
+
+

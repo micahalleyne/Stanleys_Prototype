@@ -1,0 +1,46 @@
+<div class="main_header">
+  <div class="text">
+      <h1>Singing Scientific</h1>
+      <h2 class="subtitle">Science Through The Arts</h2>
+
+      <hr class="topic_line">
+
+      <div class="topics">
+        <h2 class="topic2">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+        <h2 class="topic3">
+            Topic
+        </h2>
+      </div>
+
+      <hr class="bottom_topic_line">
+  </div>
+
+<% @forums.each do |forum| %>
+  <div class="blog_wrapper">
+    <h2 class="title"><%= link_to forum.question, forum %></h2>
+    <p class="body"><%= truncate(forum.description, length:100) %></p>
+  </div>
+<% end %>

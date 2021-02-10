@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_29_013742) do
+ActiveRecord::Schema.define(version: 2021_01_09_005339) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.integer "user_id"
+    t.integer "topic_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -26,6 +27,16 @@ ActiveRecord::Schema.define(version: 2020_12_29_013742) do
     t.integer "blog_id"
     t.integer "song_id"
     t.integer "video_id"
+    t.integer "forum_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "forums", force: :cascade do |t|
+    t.string "question"
+    t.text "description"
+    t.integer "user_id"
+    t.integer "topic_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -54,6 +65,13 @@ ActiveRecord::Schema.define(version: 2020_12_29_013742) do
     t.string "title"
     t.string "attachment"
     t.integer "user_id"
+    t.integer "topic_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "topics", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -74,6 +92,7 @@ ActiveRecord::Schema.define(version: 2020_12_29_013742) do
     t.string "title"
     t.string "attachment"
     t.integer "user_id"
+    t.integer "topic_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

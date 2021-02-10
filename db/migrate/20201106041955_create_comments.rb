@@ -6,6 +6,7 @@ class CreateComments < ActiveRecord::Migration[6.0]
       t.integer :blog_id
       t.integer :song_id
       t.integer :video_id
+      t.integer :forum_id
 
       t.timestamps
     end

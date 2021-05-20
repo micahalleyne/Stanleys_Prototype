@@ -176,6 +176,7 @@
                     border: 1px solid #6F6F6F;
                     box-sizing: border-box;
                     border-radius: 5px;
+                    padding: 10px;
                 }
                 .comment_inline {
                     display: inline-block;
@@ -367,11 +368,14 @@
             }
             .right_registry {
                 position: absolute;
-                width: 440px;
+                width: 340px;
                 height: 490px;
-                left: 1370px;
+                left: 1260px;
                 top: 200px;
-                border-radius: 300px;
+                border-top-left-radius: 300px;
+                border-top-right-radius: 18px;
+                border-bottom-right-radius: 18px;
+                border-bottom-left-radius: 300px;
             }
             .registration_header {
                 .text {
